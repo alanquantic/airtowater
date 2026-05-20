@@ -3,8 +3,10 @@
 // To add a new PDF:
 //   1. Drop the file in `public/pdfs/<filename>.pdf`.
 //   2. Append an entry below with `file: '/pdfs/<filename>.pdf'`.
-//      Spaces in filenames must be URL-encoded as `%20` so the iframe and
-//      the download link resolve correctly.
+//
+// Filename convention: kebab-case, lowercase, ASCII only (no spaces, no `+`,
+// no accents). This avoids URL-encoding edge cases on static hosts (Vercel
+// decodes `+` as space → 404 for raw `+` in paths).
 //
 // `cover` selects which icosahedron variant decorates the card:
 // 'primary' | 'spiral' | 'seal' | 'drop' | 'filled'.
@@ -17,7 +19,7 @@ const PDFS = [
     title: 'Watergen Company Profile',
     description:
       'Visión general de Watergen, la tecnología de agua del aire y su impacto global.',
-    file: '/pdfs/Watergen%20Company%20Profile.pdf',
+    file: '/pdfs/watergen-company-profile.pdf',
     cover: 'primary',
   },
   {
@@ -26,7 +28,7 @@ const PDFS = [
     title: 'The Evolution of Watergen Technology',
     description:
       'Historia técnica del sistema GENNY+ y la evolución de la tecnología air-to-water.',
-    file: '/pdfs/The%20Evolution%20of%20Watergen%20Technology%20GENNY+.pdf',
+    file: '/pdfs/evolution-of-watergen-technology-genny-plus.pdf',
     cover: 'spiral',
   },
 
@@ -37,7 +39,7 @@ const PDFS = [
     title: 'GEN-M Pro · Brochure',
     description:
       'Folleto comercial del modelo GEN-M Pro: capacidad, casos de uso y escala industrial.',
-    file: '/pdfs/GEN-M%20Pro%20Brochure.pdf',
+    file: '/pdfs/gen-m-pro-brochure.pdf',
     cover: 'primary',
   },
   {
@@ -46,7 +48,7 @@ const PDFS = [
     title: 'GEN-M Pro · Specification',
     description:
       'Hoja técnica detallada del GEN-M Pro: dimensiones, consumo, condiciones operativas.',
-    file: '/pdfs/Watergen%20GEN-M%20Pro%20Spec.pdf',
+    file: '/pdfs/gen-m-pro-spec.pdf',
     cover: 'seal',
   },
   {
@@ -55,7 +57,7 @@ const PDFS = [
     title: 'GEN-M Pro · Performance',
     description:
       'Curvas de rendimiento del GEN-M Pro frente a temperatura y humedad relativa.',
-    file: '/pdfs/Gen%20M%20Pro%20Performance.pdf',
+    file: '/pdfs/gen-m-pro-performance.pdf',
     cover: 'filled',
   },
 
@@ -65,7 +67,7 @@ const PDFS = [
     eyebrow: 'GEN-L · Brochure',
     title: 'GEN-L · Brochure',
     description: 'Folleto comercial del GEN-L para aplicaciones de gran escala.',
-    file: '/pdfs/GEN-L-Brochure.pdf',
+    file: '/pdfs/gen-l-brochure.pdf',
     cover: 'primary',
   },
   {
@@ -74,7 +76,7 @@ const PDFS = [
     title: 'GEN-L · Specification',
     description:
       'Hoja técnica del GEN-L: especificaciones eléctricas, hidráulicas y de instalación.',
-    file: '/pdfs/Watergen%20GEN-L%20Spec.pdf',
+    file: '/pdfs/gen-l-spec.pdf',
     cover: 'seal',
   },
   {
@@ -82,7 +84,7 @@ const PDFS = [
     eyebrow: 'GEN-L · Performance',
     title: 'GEN-L · Performance',
     description: 'Curvas de rendimiento del GEN-L bajo distintas condiciones climáticas.',
-    file: '/pdfs/GEN-L%20Performance.pdf',
+    file: '/pdfs/gen-l-performance.pdf',
     cover: 'filled',
   },
 
@@ -93,7 +95,7 @@ const PDFS = [
     title: 'GEN-M1 · Brochure',
     description:
       'Folleto del modelo GEN-M1, generación versátil para aplicaciones medianas.',
-    file: '/pdfs/GEN-M1%20Brochure.pdf',
+    file: '/pdfs/gen-m1-brochure.pdf',
     cover: 'primary',
   },
   {
@@ -101,7 +103,7 @@ const PDFS = [
     eyebrow: 'GEN-M1 · Spec',
     title: 'GEN-M1 · Specification',
     description: 'Hoja técnica del GEN-M1 con todos los parámetros de operación.',
-    file: '/pdfs/Watergen%20GEN-M1%20Spec.pdf',
+    file: '/pdfs/gen-m1-spec.pdf',
     cover: 'seal',
   },
 
@@ -112,7 +114,7 @@ const PDFS = [
     title: 'GENNY+ · Specification',
     description:
       'Hoja técnica del GENNY+, generador residencial de agua atmosférica.',
-    file: '/pdfs/GENNY+%20Spec.pdf',
+    file: '/pdfs/genny-plus-spec.pdf',
     cover: 'drop',
   },
 
@@ -123,7 +125,7 @@ const PDFS = [
     title: 'Distributor Pricelist',
     description:
       'Lista de precios para distribuidores autorizados y condiciones comerciales.',
-    file: '/pdfs/Watergen%20Distributor%20Pricelist.pdf',
+    file: '/pdfs/watergen-distributor-pricelist.pdf',
     cover: 'spiral',
   },
 ];

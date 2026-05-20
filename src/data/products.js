@@ -26,7 +26,7 @@ const PRODUCTS = [
       'Diseño elegante para interiores',
     ],
     image: '/images/products/genny-plus.jpg',
-    pdf: '/pdfs/GENNY+%20Spec.pdf',
+    pdf: '/pdfs/genny-plus-spec.pdf',
     cover: 'drop',
   },
   {
@@ -43,7 +43,7 @@ const PRODUCTS = [
       'Puede operar en climas variables',
     ],
     image: '/images/products/gen-m1.jpg',
-    pdf: '/pdfs/GEN-M1%20Brochure.pdf',
+    pdf: '/pdfs/gen-m1-brochure.pdf',
     cover: 'primary',
   },
   {
@@ -60,7 +60,7 @@ const PRODUCTS = [
       'Telemetría y diagnóstico remoto',
     ],
     image: '/images/products/gen-m-pro.jpg',
-    pdf: '/pdfs/GEN-M%20Pro%20Brochure.pdf',
+    pdf: '/pdfs/gen-m-pro-brochure.pdf',
     cover: 'seal',
   },
   {
@@ -77,7 +77,7 @@ const PRODUCTS = [
       'Integración con plantas de tratamiento',
     ],
     image: '/images/products/gen-l.jpg',
-    pdf: '/pdfs/GEN-L-Brochure.pdf',
+    pdf: '/pdfs/gen-l-brochure.pdf',
     cover: 'filled',
   },
 ];
