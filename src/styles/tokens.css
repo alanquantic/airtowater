@@ -1,0 +1,25 @@
+:root {
+  --ocean: #1d3a5f;
+  --deep: #0e2238;
+  --mist: #a9c4d4;
+  --mint: #4a8c7a;
+  --water: #3a6a8a;
+  --gold: #b8954a;
+  --silver: #c9cdd2;
+  --paper: #f5f1e8;
+  --paper-cool: #eef2f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+}

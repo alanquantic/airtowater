@@ -1,0 +1,67 @@
+/* Styles ported from `airtowater icosahedron.html` */
+
+.page-icosahedron {
+  background: #1a1a1a;
+  font-family: 'JetBrains Mono', monospace;
+  min-height: 100vh;
+}
+
+.page-icosahedron .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.page-icosahedron .label-meta {
+  position: absolute;
+  bottom: 10px;
+  left: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.page-icosahedron .legend {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #1d3a5f;
+  padding: 28px;
+}
+
+.page-icosahedron .legend h3 {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0 0 14px;
+  letter-spacing: 0.04em;
+}
+
+.page-icosahedron .legend p {
+  margin: 0 0 12px;
+  opacity: 0.78;
+}
+
+.page-icosahedron .legend .row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.page-icosahedron .swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.page-icosahedron .num {
+  color: #b8954a;
+}
