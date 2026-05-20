@@ -9,6 +9,7 @@ import {
   MonolineMark,
 } from '../components/Marks.jsx';
 import { Wordmark, HorizontalLockup, StackedLockup } from '../components/Lockups.jsx';
+import BackHome from '../components/BackHome.jsx';
 import '../styles/logos.css';
 
 const PAPER = '#f5f1e8';
@@ -33,6 +34,7 @@ const CardBg = ({ bg, children, accent }) => (
 function Logos() {
   return (
     <div className="page-logos">
+      <BackHome tone="dark" />
       <DesignCanvas
         title="airtowater.mx — logo exploration"
         subtitle="9 marks across sacred-geometry concepts, lockups, and color treatments"

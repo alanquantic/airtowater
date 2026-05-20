@@ -8,6 +8,7 @@ import {
   TweakColor,
   useTweaks,
 } from '../components/TweaksPanel.jsx';
+import BackHome from '../components/BackHome.jsx';
 import '../styles/icosahedron.css';
 
 const TWEAK_DEFAULTS = {
@@ -100,6 +101,7 @@ function Icosahedron() {
   const M = makeTweakedMarks(t.lineWeight);
   return (
     <div className="page-icosahedron">
+      <BackHome tone="dark" />
       <TweaksPanel title="Tweaks · icosaedro">
         <TweakSection label="Geometría">
           <TweakSlider

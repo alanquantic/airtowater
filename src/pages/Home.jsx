@@ -30,6 +30,13 @@ const cards = [
     desc: 'Sistema final entregable: SVG, lockups, paleta, reglas de uso.',
     type: 'static',
   },
+  {
+    href: '/pdfs',
+    tag: 'Documents',
+    title: 'PDFs',
+    desc: 'Documentación oficial del sistema de marca en formato PDF, con visor inline.',
+    type: 'route',
+  },
 ];
 
 function Home() {
